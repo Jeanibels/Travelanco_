@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelanco</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css file cdn link  -->
+    <link rel="stylesheet" href="Travelanco.css">
+
+</head>
+<body>
+    <div id="preloader">
+        <img src="Travelanco-Img/preload.gif" alt="Loading...">
+    </div>
+    <!-- header section starts  -->
+<header class="header1">
+    <div class="logo">
+        <img src="Travelanco-Img/travelogo.png" alt="Logo Image">
+
+    <div class="icons">
+        <div class="fas fa-moon" id="button1"></div>
+        <div class="fas fa-user" id="button2"></div>
+        <div class="fas fa-bars" id="button3"></div>
+    </div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Packages.html">Packages</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a> 
+    </nav>
+
+
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>username</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+
+        <div class="inputBox">
+            <span>password</span>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login">
+
+    </form>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="Message1.html">Home</a></li>
+        <li><a href="Message.html">Reservation Status</a></li> <!-- Link to message.html -->
+    </ul>
+</nav>
+
+<!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <div id="section1">
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="Travelanco-Img/Boracay Island Philippines_ The Best Island in the World.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <a href="https://www.shangri-la.com/boracay/boracayresort/about/local-guide/" class="btn" id="exploreBtn">Explore Now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- footer section starts  -->
+<div class="footer__bar">
+    <section class="reservation" id="contact">
+        <div class="section__container reservation__container">
+            <h2 class="section__header">RESERVATION FORM</h2>
+            <form id="reservation-form" class="box-container">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" placeholder=" Enter your Phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter Addres" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder=" Enter your Age" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="people">Number of People:</label>
+                    <input type="number" id="people" name="people" placeholder=" Enter People" required>
+                </div>
+                <button class="btn" type="submit">SUBMIT</button>
+            </form>
+            <div id="message" class="message"></div>
+        </div>
+        <div id="message" class="message"></div> <!-- Message container -->
+        </div>
+    </section>
+</div>
+
+        </div>
+    </section>
+</div>
+
+    <center><div class="credit"> <p>&copy; Copyright © 2024 TRAVELANCO. All rights reserved.</p></center>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- js file link  -->
+<script src="Travelanco.js"></script>
+
+<script>
+
+AOS.init({
+    duration:800,
+    delay:400
+});
+
+</script>
+
+</body>
+</html>
